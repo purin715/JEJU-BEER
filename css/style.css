@@ -32,7 +32,7 @@ ul#member li:last-child a { line-height: 30px; color: #fff; }
 
 @media screen and (min-width:760px) and (max-width:1249px) {
     header { height: 140px; }
-    header h1 { font-size: 45px; left: 50%; top: 15px; transform: translateX(-50%); }
+    header h1 { font-size: 45px; left: 50%; top: 13px; transform: translateX(-50%); }
 
     nav { left: 50%; top: 50px; margin-left: -300px; }
     nav ul#menu li { height: 130px; }
@@ -43,7 +43,7 @@ ul#member li:last-child a { line-height: 30px; color: #fff; }
 }
 @media screen and (min-width:280px) and (max-width:759px) {
     header { height: 100px; }
-    header h1 { font-size: 30px; left: 50%; top: 15px; transform: translateX(-50%); }
+    header h1 { font-size: 30px; left: 50%; top: 13px; transform: translateX(-50%); }
 
     nav { left: 50%; top: 50px; margin-left: -150px; }
     nav ul#menu li { width: 100px; height: 50px; }
