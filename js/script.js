@@ -85,7 +85,6 @@ $(document).ready(function () {
         $('#second article').on("mouseover", function(){
             $(this).find('h2').stop().animate({ "opacity" : "0" }, 10);
             $(this).stop().animate({ "width" : "45%" }, 300, function() {
-                $(this).find('h3').stop().animate({ "right" : "10px" }, 200);
                 $(this).find('p').stop().animate({ "right" : "10px" }, 400);
             });
             $(this).find('img').stop().animate({ "opacity" : "0.75" }, 600);
@@ -93,8 +92,7 @@ $(document).ready(function () {
     } else if(matchMedia("screen and (min-width:660px) and (max-width:1023px)").matches) {
         $('#second article').on("mouseover", function(){
             $(this).find('h2').stop().animate({ "opacity" : "0" }, 10);
-            $(this).stop().animate({ "width" : "25%" }, 300, function() {
-                $(this).find('h3').stop().animate({ "right" : "10px" }, 200);
+            $(this).stop().animate({ "width" : "35%" }, 300, function() {
                 $(this).find('p').stop().animate({ "right" : "10px" }, 400);
             });
             $(this).find('img').stop().animate({ "opacity" : "0.75" }, 600);
@@ -103,7 +101,6 @@ $(document).ready(function () {
         $('#second article').on("mouseover", function(){
             $(this).find('h2').stop().animate({ "opacity" : "0" }, 10);
             $(this).stop().animate({ "width" : "32%" }, 300, function() {
-                $(this).find('h3').stop().animate({ "right" : "20px" }, 200);
                 $(this).find('p').stop().animate({ "right" : "20px" }, 400);
             });
             $(this).find('img').stop().animate({ "opacity" : "0.75" }, 600);
@@ -114,7 +111,6 @@ $(document).ready(function () {
         $('#second article').on("mouseout", function(){
             $(this).find('h2').stop().animate({ "opacity" : "1" }, 10);
             $(this).stop().animate({ "width" : "30%" }, 200);
-            $(this).find('h3').stop().animate({ "right" : "-510px" }, 200);
             $(this).find('p').stop().animate({ "right" : "-510px" }, 400);
             $(this).find('img').stop().animate({ "opacity" : "0" }, 600);
         });
@@ -122,7 +118,6 @@ $(document).ready(function () {
         $('#second article').on("mouseout", function(){
             $(this).find('h2').stop().animate({ "opacity" : "1" }, 10);
             $(this).stop().animate({ "width" : "20%" }, 200);
-            $(this).find('h3').stop().animate({ "right" : "-510px" }, 200);
             $(this).find('p').stop().animate({ "right" : "-510px" }, 400);
             $(this).find('img').stop().animate({ "opacity" : "0" }, 600);
         });
@@ -130,7 +125,6 @@ $(document).ready(function () {
         $('#second article').on("mouseout", function(){
             $(this).find('h2').stop().animate({ "opacity" : "1" }, 10);
             $(this).stop().animate({ "width" : "15%" }, 200);
-            $(this).find('h3').stop().animate({ "right" : "-510px" }, 200);
             $(this).find('p').stop().animate({ "right" : "-510px" }, 400);
             $(this).find('img').stop().animate({ "opacity" : "0" }, 600);
         });
