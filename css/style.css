@@ -78,27 +78,28 @@ ul#member li:last-child a { line-height: 30px; color: #fff; }
 }
 
 /*==== animation ====*/
-@keyframes aniBtn { 0% { bottom: 10%; } 50% { bottom: 9.5% } 100% { bottom: 10%; } }
-@keyframes aniBtn2 { 0% { bottom: 10.5%; } 50% { bottom: 10% } 100% { bottom: 10.5%; } }
+@keyframes aniBtn { 0% { top: 60px; } 50% { top: 56px; } 100% { top: 60px; } }
+@keyframes aniBtn2 { 0% { top: 74px; } 50% { top: 70px; } 100% { top: 74px; } }
 
 /*===== First Page =====*/
 #first { position: relative; overflow: hidden; }
 #first video { position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; width: auto; height: auto; }
 
-#first>p {
-    position: absolute; left: 50%; bottom: 19%; transform: translateX(-50%);
+.scroll { position: absolute; left: 50%; bottom: 0; width: 30px; height: 170px; }
+.scroll p {
+    position: absolute; left: 50%; top: 0; transform: translateX(-50%);
     color: rgba(255,255,255,0.7); font: 20px 'Raleway';
 }
-.conWrap {
-    position: absolute; left: 50%; width: 30px; height: 50px; transform: translateX(-50%);
+.scroll .conWrap {
+    position: absolute; left: 0; width: 30px; height: 50px;
     border-radius: 20px; border: 2px solid rgba(255,255,255,0.7); animation: aniBtn linear 0.6s infinite;
 }
-.conAni {
+.scroll .conAni {
     position: absolute; left: 50%; transform: translateX(-50%);
     font-size: 20px; color: rgba(255,255,255,0.9); animation: aniBtn2 linear 0.6s infinite;
 }
-.line {
-    position: absolute; left: 50%; bottom: 0; width: 1px; height: 60px; transform: translateX(-50%);
+.scroll .line {
+    position: absolute; left: 50%; bottom: 0; width: 1px; height: 60px;
     background: rgba(255,255,255,0.5);
 }
 
@@ -152,26 +153,28 @@ article:hover div { opacity: 1; }
 #third video { position: absolute; min-width: 100%; min-height: 100%; width: auto; height: auto; }
 #third .bg { position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.2); }
 
-.text h1 img { position: absolute; left: 50%; }
-.text h1:nth-child(1) img { width: 300px; margin-left: -150px; top: 20%; }
-.text h1:nth-child(2) img { width: 250px; margin-left: -125px; top: 30%; }
+.text { position: relative; left: 50%; top: 22%; transform: translateX(-50%); width: 600px; height: 420px; }
+.text h1:nth-child(1) img { position: absolute; left: 50%; width: 300px; margin-left: -150px; top:0%; }
+.text h1:nth-child(2) img { position: absolute; left: 50%; width: 250px; margin-left: -125px; top: 22%; }
 
-.text h3, .text p { position: absolute; left: 50%; width: 100%; margin-left: -50%; text-align: center; color: rgba(255,255,255,0.9); }
-.text h3 { font: 28px 'Noto Sans KR'; top: 60%; }
-.text p { font: 300 40px 'HangultuelGothic'; top: 65%; }
+.text h3, .text p { position: absolute; left: 50%; margin-left: -50%; width: 100%; text-align: center; color: rgba(255,255,255,0.9); }
+.text h3 { bottom: 15%; font: 25px 'Noto Sans KR'; }
+.text p { bottom: 0; font: 300 35px 'HangultuelGothic'; }
 
 
-@media screen and (min-width:660px) and (max-width:850px) {
-    .text h1:nth-child(1) img { top: 25%; }
-    .text h1:nth-child(2) img { top: 35%; }
-    .text h3 { font-size: 22px; top: 60%; }
-    .text p { font-size: 30px; top: 65%; }
+@media screen and (min-width:660px) and (max-width:1249px) {
+    .text { height: 350px; top: 35%; }
+    .text h1:nth-child(1) img { width: 250px; margin-left: -125px; }
+    .text h1:nth-child(2) img { width: 200px; margin-left: -100px; }
+    .text h3 { font-size: 22px; }
+    .text p { font-size: 30px; }
 }
 @media screen and (min-width:280px) and (max-width:659px) {
-    .text h1:nth-child(1) img { width: 200px; margin-left: -100px; top: 32%; }
-    .text h1:nth-child(2) img { width: 150px; margin-left: -75px; top:41%; }
-    .text h3 { font-size: 16px; width: 200px; margin-left: -100px; top: 62%; }
-    .text p { font-size: 20px; top: 70%; }
+    .text { height: 280px; top: 40%; }
+    .text h1:nth-child(1) img { width: 200px; margin-left: -100px; }
+    .text h1:nth-child(2) img { width: 150px; margin-left: -75px; }
+    .text h3 { font-size: 16px; }
+    .text p { font-size: 25px; }
 }
 
 /*===== footer =====*/
