@@ -160,7 +160,6 @@ article:hover div { opacity: 1; }
 .text h3 { bottom: 15%; font: 25px 'Noto Sans KR'; }
 .text p { bottom: 0; font: 300 35px 'HangultuelGothic'; }
 
-
 @media screen and (min-width:660px) and (max-width:1249px) {
     .text { height: 350px; top: 35%; }
     .text h1:nth-child(1) img { width: 250px; margin-left: -125px; }
