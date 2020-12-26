@@ -170,7 +170,7 @@ article:hover div { opacity: 1; }
     .text p { font-size: 30px; }
 }
 @media screen and (min-width:280px) and (max-width:659px) {
-    .text { height: 320px; top: 37%; }
+    .text { height: 320px; top: 34%; }
     .text h1:nth-child(1) img { width: 200px; margin-left: -100px; }
     .text h1:nth-child(2) img { width: 150px; margin-left: -75px; }
     .text h3 { font-size: 16px; width: 200px; margin-left: -100px; }
